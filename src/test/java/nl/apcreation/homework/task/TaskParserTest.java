@@ -41,9 +41,25 @@ public class TaskParserTest {
         var obstacle1 = new Obstacle(1,4,2,3);
         var grid1 = new Grid(5, 5, Set.of(obstacle1));
         var finishPoint1 = new Point(4, 4);
-        var solutionResolver1 = new Solver(grid1, finishPoint1);
+        var solver1 = new Solver(grid1, finishPoint1);
 
         Assertions.assertEquals(hopper1, task1.getHopper());
-        Assertions.assertEquals(solutionResolver1, task1.getSolver());
+        Assertions.assertEquals(solver1, task1.getSolver());
+
+        var task2 = tasks.get(1);
+
+        var obstacle21 = new Obstacle(1, 1, 0, 2);
+        var obstacle22 = new Obstacle(0, 2, 1, 1);
+        var grid2 = new Grid(3, 3, Set.of(obstacle21, obstacle22));
+        var finishPoint2 = new Point(2, 2);
+        var solver2 = new Solver(grid2, finishPoint2);
+
+        var startPoint2 = new Point(0, 0);
+        var startVelocity2 = new Velocity(0, 0);
+        var startMove2 = new Move(startPoint2, startVelocity2);
+        var hopper2 = new Hopper(startMove2);
+
+        Assertions.assertEquals(hopper2, task2.getHopper());
+        Assertions.assertEquals(solver2, task2.getSolver());
     }
 }
