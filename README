@@ -1,0 +1,9 @@
+To run application you need:
+
+1. JDK 1.8+
+2. import project as gradle project
+3. run Application.java main(String args[]) method
+
+Code is covered with unit tests
+
+Sorry about not commented code, from my point of view code should be readable without additional comments

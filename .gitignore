@@ -1,0 +1,34 @@
+**/.gradle
+**/build/
+**/logs/
+!**/gradle/wrapper/gradle-wrapper.jar
+**/Pipfile*
+/tmp*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+**/out/
+
+### Files left behind by mergetools ###
+*.orig
+*.rej
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+**/.DS_Store
